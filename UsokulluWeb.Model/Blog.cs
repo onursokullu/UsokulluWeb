@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -14,8 +15,10 @@ namespace UsokulluWeb.Model
             this.Comment = new HashSet<BlogComment>();
         }
         public int CategoryId { get; set; }
+        [Required]
         public string Content { get; set; }
         public int UserId { get; set; }
+        [Required]
         public string Title { get; set; }
 
         //navigation properties
