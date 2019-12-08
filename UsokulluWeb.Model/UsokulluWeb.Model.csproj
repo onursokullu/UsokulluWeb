@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,7 +41,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Appointments.cs" />
+    <Compile Include="Base.cs" />
+    <Compile Include="Blog.cs" />
+    <Compile Include="BlogCategory.cs" />
+    <Compile Include="BlogComment.cs" />
+    <Compile Include="BloodGroups.cs" />
+    <Compile Include="ContactForm.cs" />
+    <Compile Include="Expenses.cs" />
+    <Compile Include="Images.cs" />
+    <Compile Include="Medicines.cs" />
+    <Compile Include="Patients.cs" />
+    <Compile Include="Prescription.cs" />
+    <Compile Include="PrescriptionMedicines.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Subscribers.cs" />
+    <Compile Include="Treatments.cs" />
+    <Compile Include="Users.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

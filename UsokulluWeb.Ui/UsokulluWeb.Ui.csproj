@@ -354,6 +354,16 @@
     <Folder Include="Areas\Admin\Views\Shared\" />
     <Folder Include="Models\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UsokulluWeb.Bll\UsokulluWeb.Bll.csproj">
+      <Project>{0e7866f0-7cbf-4686-b6d2-a5d54017a627}</Project>
+      <Name>UsokulluWeb.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UsokulluWeb.Model\UsokulluWeb.Model.csproj">
+      <Project>{150d7540-3fdb-4163-a7a5-5d17b1ecba1b}</Project>
+      <Name>UsokulluWeb.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

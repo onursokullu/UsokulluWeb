@@ -12,7 +12,6 @@ namespace UsokulluWeb.Model
         [DataType(DataType.EmailAddress)]
         public string UserEmail { get; set; }
         public string Password { get; set; }
-        public string UserType { get; set; }
-
+        public int UserType { get; set; }
     }
 }
