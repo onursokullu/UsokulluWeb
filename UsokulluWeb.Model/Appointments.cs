@@ -16,6 +16,6 @@ namespace UsokulluWeb.Model
 
         //navigation properties
         [ForeignKey("PatientId")]
-        public virtual HashSet<Patients> Patient { get; set; }
+        public virtual Patients Patient { get; set; }
     }
 }

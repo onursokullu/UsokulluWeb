@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace UsokulluWeb.Model
 {
-    class ContactForm :Base
+    public class Contact : Base
     {
         public string Name { get; set; }
         [Required]

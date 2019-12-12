@@ -3,6 +3,7 @@ namespace UsokulluWeb.Dal.Entity
     using System;
     using System.Data.Entity;
     using System.Linq;
+    using UsokulluWeb.Model;
 
     public class UsokulluContext : DbContext
     {
@@ -20,7 +21,22 @@ namespace UsokulluWeb.Dal.Entity
         // Add a DbSet for each entity type that you want to include in your model. For more information 
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
-        // public virtual DbSet<MyEntity> MyEntities { get; set; }
+        public virtual DbSet<Appointments> Appointment { get; set; }
+        public virtual DbSet<Blog> Blog { get; set; }
+        public virtual DbSet<Category> Category { get; set; }
+        public virtual DbSet<BlogComment> BlogComment { get; set; }
+        public virtual DbSet<BloodGroups> BloodGroups { get; set; }
+        public virtual DbSet<Contact> ContactForm { get; set; }
+        public virtual DbSet<Expenses> Expenses { get; set; }
+        public virtual DbSet<Images> Images { get; set; }
+        public virtual DbSet<Medicines> Medicines { get; set; }
+        public virtual DbSet<Patients> Patients { get; set; }
+        public virtual DbSet<Prescription> Prescriptions { get; set; }
+        public virtual DbSet<Subscribers> Subscribers { get; set; }
+        public virtual DbSet<Treatments> Treatments { get; set; }
+        public virtual DbSet<Users> Users { get; set; }
+
+
     }
 
     //public class MyEntity

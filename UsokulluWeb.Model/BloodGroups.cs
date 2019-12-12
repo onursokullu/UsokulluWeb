@@ -9,12 +9,16 @@ namespace UsokulluWeb.Model
 {
     public class BloodGroups : Base
     {
+        public BloodGroups()
+        {
+            this.Patient = new HashSet<Patients>();
+        }
         public int PatientId { get; set; }
         public string GroupName { get; set; }
 
         //navigation properties
         [ForeignKey("PatientId")]
-        public virtual Patients Patient { get; set; }
+        public virtual ICollection<Patients> Patient { get; set; }
 
     }
 }

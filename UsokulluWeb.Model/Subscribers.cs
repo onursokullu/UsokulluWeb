@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace UsokulluWeb.Model
 {
-    class Subscribers : Base
+    public class Subscribers : Base
     {
         [Required]
         public int email { get; set; }

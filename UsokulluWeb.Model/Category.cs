@@ -8,16 +8,14 @@ using System.Threading.Tasks;
 
 namespace UsokulluWeb.Model
 {
-    public class BlogCategory : Base
+    public class Category : Base
     {
       
         public int BlogId { get; set; }
         [Required]
         public string Name { get; set; }
 
-        //navigation properties
-        [ForeignKey("BlogId")]
-        public virtual Blog blog { get; set; }
+      
 
     }
 }

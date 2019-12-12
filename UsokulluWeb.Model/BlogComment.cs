@@ -10,6 +10,7 @@ namespace UsokulluWeb.Model
 {
     public class BlogComment : Base
     {
+        
         public int BlogId { get; set; }
         [Required]
         public string NameSur { get; set; }
