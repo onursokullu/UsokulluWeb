@@ -53,9 +53,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entity\UsokulluContext.cs" />
-    <Compile Include="Migrations\201912131618219_First.cs" />
-    <Compile Include="Migrations\201912131618219_First.designer.cs">
-      <DependentUpon>201912131618219_First.cs</DependentUpon>
+    <Compile Include="Migrations\201912132119116_Second.cs" />
+    <Compile Include="Migrations\201912132119116_Second.designer.cs">
+      <DependentUpon>201912132119116_Second.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912132127357_nullable.cs" />
+    <Compile Include="Migrations\201912132127357_nullable.designer.cs">
+      <DependentUpon>201912132127357_nullable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,8 +78,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201912131618219_First.resx">
-      <DependentUpon>201912131618219_First.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201912132119116_Second.resx">
+      <DependentUpon>201912132119116_Second.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912132127357_nullable.resx">
+      <DependentUpon>201912132127357_nullable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

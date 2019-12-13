@@ -32,7 +32,7 @@ namespace UsokulluWeb.Ui.Areas.Admin.Controllers
                 model.IsDelete = false;
                 model.CreateDate = DateTime.Now;
                 var result = repo.Add(model);
-                TempData["Message"] = result ? new TempDataDictionary { { "class", "alert-success" }, { "Msg", "Hasta başarıyla eklendi" } } : new TempDataDictionary { {"class","alert-danfer" }, { "Msg","Hasta eklenemedi"} };
+                TempData["Message"] = result ? new TempDataDictionary { { "class", "alert-success" }, { "Msg", "Hasta başarıyla eklendi" } } : new TempDataDictionary { { "class", "alert-danfer" }, { "Msg", "Hasta eklenemedi" } };
                 return View();
             }
         }

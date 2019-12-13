@@ -7,13 +7,13 @@ namespace UsokulluWeb.Dal.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.0")]
-    public sealed partial class First : IMigrationMetadata
+    public sealed partial class nullable : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(First));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(nullable));
         
         string IMigrationMetadata.Id
         {
-            get { return "201912131618219_First"; }
+            get { return "201912132127357_nullable"; }
         }
         
         string IMigrationMetadata.Source

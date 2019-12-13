@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace UsokulluWeb.Model
 {
-    public class BloodGroups : Base
+    public class BloodGroups
     {
         public BloodGroups()
         {
             this.Patient = new HashSet<Patients>();
         }
-        public int PatientId { get; set; }
+        public int Id { get; set; }
         public string GroupName { get; set; }
 
         //navigation properties

@@ -29,10 +29,10 @@ namespace UsokulluWeb.Model
         public string Telephone { get; set; }
         [Required]
         public string Address { get; set; }
-        public int BloodGroupId { get; set; }
-        public int PrescriptionId { get; set; }
-        public int TreatmentId { get; set; }
-        public int AppointmentId { get; set; }
+        public int? BloodGroupId { get; set; }
+        public int? PrescriptionId { get; set; }
+        public int? TreatmentId { get; set; }
+        public int? AppointmentId { get; set; }
         [Required]
         public string Gender { get; set; }
 
