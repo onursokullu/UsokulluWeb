@@ -1,4 +1,5 @@
 ﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -44,10 +45,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -57,6 +72,12 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -248,6 +269,63 @@
     <Content Include="Areas\AdminTemp\typography.html" />
     <Content Include="Areas\AdminTemp\ui.html" />
     <Content Include="Areas\AdminTemp\widgets.html" />
+    <Content Include="Areas\Admin\Content\bootstrap-responsive.css" />
+    <Content Include="Areas\Admin\Content\bootstrap-responsive.min.css" />
+    <Content Include="Areas\Admin\Content\bootstrap.css" />
+    <Content Include="Areas\Admin\Content\bootstrap.min.css" />
+    <Content Include="Areas\Admin\Content\chosen.css" />
+    <Content Include="Areas\Admin\Content\elfinder.min.css" />
+    <Content Include="Areas\Admin\Content\elfinder.theme.css" />
+    <Content Include="Areas\Admin\Content\font-awesome-ie7.min.css" />
+    <Content Include="Areas\Admin\Content\font-awesome.min.css" />
+    <Content Include="Areas\Admin\Content\fullcalendar.css" />
+    <Content Include="Areas\Admin\Content\glyphicons.css" />
+    <Content Include="Areas\Admin\Content\halflings.css" />
+    <Content Include="Areas\Admin\Content\ie.css" />
+    <Content Include="Areas\Admin\Content\ie9.css" />
+    <Content Include="Areas\Admin\Content\Images\bg-login.jpg" />
+    <Content Include="Areas\Admin\Content\jquery-ui-1.8.21.custom.css" />
+    <Content Include="Areas\Admin\Content\jquery.cleditor.css" />
+    <Content Include="Areas\Admin\Content\jquery.gritter.css" />
+    <Content Include="Areas\Admin\Content\jquery.iphone.toggle.css" />
+    <Content Include="Areas\Admin\Content\jquery.noty.css" />
+    <Content Include="Areas\Admin\Content\noty_theme_default.css" />
+    <Content Include="Areas\Admin\Content\style-forms.css" />
+    <Content Include="Areas\Admin\Content\style-responsive.css" />
+    <Content Include="Areas\Admin\Content\style.css" />
+    <Content Include="Areas\Admin\Content\uniform.default.css" />
+    <Content Include="Areas\Admin\Content\uploadify.css" />
+    <Content Include="Areas\Admin\Scripts\bootstrap.js" />
+    <Content Include="Areas\Admin\Scripts\bootstrap.min.js" />
+    <Content Include="Areas\Admin\Scripts\counter.js" />
+    <Content Include="Areas\Admin\Scripts\custom.js" />
+    <Content Include="Areas\Admin\Scripts\excanvas.js" />
+    <Content Include="Areas\Admin\Scripts\fullcalendar.min.js" />
+    <Content Include="Areas\Admin\Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Areas\Admin\Scripts\jquery-migrate-1.0.0.min.js" />
+    <Content Include="Areas\Admin\Scripts\jquery-ui-1.10.0.custom.min.js" />
+    <Content Include="Areas\Admin\Scripts\jquery.chosen.min.js" />
+    <Content Include="Areas\Admin\Scripts\jquery.cleditor.min.js" />
+    <Content Include="Areas\Admin\Scripts\jquery.cookie.js" />
+    <Content Include="Areas\Admin\Scripts\jquery.dataTables.min.js" />
+    <Content Include="Areas\Admin\Scripts\jquery.elfinder.min.js" />
+    <Content Include="Areas\Admin\Scripts\jquery.flot.js" />
+    <Content Include="Areas\Admin\Scripts\jquery.flot.pie.js" />
+    <Content Include="Areas\Admin\Scripts\jquery.flot.resize.min.js" />
+    <Content Include="Areas\Admin\Scripts\jquery.flot.stack.js" />
+    <Content Include="Areas\Admin\Scripts\jquery.gritter.min.js" />
+    <Content Include="Areas\Admin\Scripts\jquery.imagesloaded.js" />
+    <Content Include="Areas\Admin\Scripts\jquery.iphone.toggle.js" />
+    <Content Include="Areas\Admin\Scripts\jquery.knob.modified.js" />
+    <Content Include="Areas\Admin\Scripts\jquery.masonry.min.js" />
+    <Content Include="Areas\Admin\Scripts\jquery.noty.js" />
+    <Content Include="Areas\Admin\Scripts\jquery.raty.min.js" />
+    <Content Include="Areas\Admin\Scripts\jquery.sparkline.min.js" />
+    <Content Include="Areas\Admin\Scripts\jquery.ui.touch-punch.js" />
+    <Content Include="Areas\Admin\Scripts\jquery.uniform.min.js" />
+    <Content Include="Areas\Admin\Scripts\jquery.uploadify-3.1.min.js" />
+    <Content Include="Areas\Admin\Scripts\modernizr.js" />
+    <Content Include="Areas\Admin\Scripts\retina.js" />
     <Content Include="Content\aos.css" />
     <Content Include="Content\bootstrap-datepicker.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -266,6 +344,7 @@
     <Content Include="Content\magnific-popup.css" />
     <Content Include="Content\owl.carousel.min.css" />
     <Content Include="Content\owl.theme.default.min.css" />
+    <Content Include="Content\Site.css" />
     <Content Include="Content\style.css" />
     <Content Include="Fonts\flaticon\backup.txt" />
     <Content Include="Fonts\flaticon\font\flaticon.css" />
@@ -297,7 +376,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
+    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SubscriberController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -332,6 +415,12 @@
     <Content Include="Areas\AdminTemp\font\glyphiconshalflings-regular.ttf" />
     <Content Include="Areas\AdminTemp\font\glyphiconshalflings-regular.woff" />
     <Content Include="Areas\AdminTemp\README.md" />
+    <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\Login.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Subscriber\Create.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -349,9 +438,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Fonts\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Areas\Admin\Views\Shared\" />
+    <Folder Include="Areas\Scripts\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -395,7 +484,10 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
   </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

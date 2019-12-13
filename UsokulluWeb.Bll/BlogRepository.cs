@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UsokulluWeb.Bll
 {
-    public class Blog : BaseRepository<Blog>
+    public class BlogRepository : BaseRepository<BlogRepository>
     {
        
     }

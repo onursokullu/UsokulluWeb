@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UsokulluWeb.Model;
 
 namespace UsokulluWeb.Bll
 {
-    public class BloodGroupRepository : BaseRepository<BloodGroup>
+    public class BloodGroupRepository : BaseRepository<BloodGroups>
     {
     }
 }

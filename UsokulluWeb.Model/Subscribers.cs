@@ -10,6 +10,6 @@ namespace UsokulluWeb.Model
     public class Subscribers : Base
     {
         [Required]
-        public int email { get; set; }
+        public string Email { get; set; }
     }
 }

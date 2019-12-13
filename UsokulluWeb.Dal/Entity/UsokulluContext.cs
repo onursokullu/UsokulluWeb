@@ -16,6 +16,8 @@ namespace UsokulluWeb.Dal.Entity
         public UsokulluContext()
             : base("name=UsokulluContext")
         {
+            Database.SetInitializer<UsokulluContext>(new CreateDatabaseIfNotExists<UsokulluContext>());
+
         }
 
         // Add a DbSet for each entity type that you want to include in your model. For more information 

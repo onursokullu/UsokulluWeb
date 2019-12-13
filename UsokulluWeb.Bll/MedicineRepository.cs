@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UsokulluWeb.Model;
 
 namespace UsokulluWeb.Bll
 {
-    class MedicineRepository
+    public class MedicineRepository : BaseRepository<Medicines>
     {
     }
 }
