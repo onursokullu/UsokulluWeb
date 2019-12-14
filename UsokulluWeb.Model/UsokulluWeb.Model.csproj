@@ -46,7 +46,6 @@
     <Compile Include="Blog.cs" />
     <Compile Include="Category.cs" />
     <Compile Include="BlogComment.cs" />
-    <Compile Include="BloodGroups.cs" />
     <Compile Include="Contact.cs" />
     <Compile Include="Expenses.cs" />
     <Compile Include="Images.cs" />

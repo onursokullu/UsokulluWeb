@@ -17,7 +17,7 @@ namespace UsokulluWeb.Model
             this.Appointment = new HashSet<Appointments>();
         }
         [Required]
-        public int TcNo { get; set; }
+        public string TcNo { get; set; }
         [Required]
         public string Email { get; set; }
         [Required]
@@ -29,23 +29,19 @@ namespace UsokulluWeb.Model
         public string Telephone { get; set; }
         [Required]
         public string Address { get; set; }
-        public int? BloodGroupId { get; set; }
         public int? PrescriptionId { get; set; }
         public int? TreatmentId { get; set; }
+        public string BloodGroup { get; set; }
         public int? AppointmentId { get; set; }
         [Required]
         public string Gender { get; set; }
 
         //navigation properties
-        [ForeignKey("BloodGroupId")]
-        public virtual BloodGroups BloodGroup { get; set; }
        // [ForeignKey("PrescriptionId")]
         public virtual ICollection<Prescription> Prescription { get; set; }
         [ForeignKey("TreatmentId")]
         public virtual ICollection<Treatments> Treatment { get; set; }
         [ForeignKey("AppointmentId")]
         public virtual ICollection<Appointments> Appointment { get; set; }
-
-
     }
 }

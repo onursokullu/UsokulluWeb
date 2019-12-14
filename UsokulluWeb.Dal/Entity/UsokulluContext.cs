@@ -27,7 +27,6 @@ namespace UsokulluWeb.Dal.Entity
         public virtual DbSet<Blog> Blog { get; set; }
         public virtual DbSet<Category> Category { get; set; }
         public virtual DbSet<BlogComment> BlogComment { get; set; }
-        public virtual DbSet<BloodGroups> BloodGroups { get; set; }
         public virtual DbSet<Contact> ContactForm { get; set; }
         public virtual DbSet<Expenses> Expenses { get; set; }
         public virtual DbSet<Images> Images { get; set; }

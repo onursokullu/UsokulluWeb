@@ -426,6 +426,9 @@
     <Content Include="Areas\Admin\Views\Subscriber\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Patient\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Patient\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Patient\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Patient\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Patient\Detail.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />

@@ -45,7 +45,6 @@
     <Compile Include="BaseRepository.cs" />
     <Compile Include="BlogRepository.cs" />
     <Compile Include="BlogCommentRepository.cs" />
-    <Compile Include="BloodGroupRepository.cs" />
     <Compile Include="CategoryRepository.cs" />
     <Compile Include="ContactRepository.cs" />
     <Compile Include="ExpenseRepository.cs" />

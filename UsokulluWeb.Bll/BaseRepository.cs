@@ -59,21 +59,6 @@ namespace UsokulluWeb.Bll
                 return true;
             }
         }
-        public bool SoftDelete(T data)
-        {
-            try
-            {
-                //olmadı
-                context.Entry<T>(data).State = System.Data.Entity.EntityState.Modified;
-                return context.SaveChanges() > 0 ? true : false;
-            }
-            catch (Exception)
-            {
-
-                return false;
-            }
-        }
-
         public List<T> GetAll()
         {
 
