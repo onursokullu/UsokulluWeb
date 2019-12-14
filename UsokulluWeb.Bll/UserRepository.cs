@@ -9,5 +9,9 @@ namespace UsokulluWeb.Bll
 {
     public class UserRepository : BaseRepository<Users>
     {
+        public Users Login(string email, string password)
+        {
+            return context.Set<Users>().Where(x => x.UserEmail == email && x.Password ==password).FirstOrDefault();
+        }
     }
 }

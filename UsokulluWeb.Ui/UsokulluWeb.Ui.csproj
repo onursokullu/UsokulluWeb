@@ -384,6 +384,7 @@
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\PatientController.cs" />
     <Compile Include="Areas\Admin\Controllers\SubscriberController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UserController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -421,7 +422,6 @@
     <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\Home\Login.cshtml" />
     <Content Include="Areas\Admin\Views\Category\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Subscriber\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Patient\Index.cshtml" />
@@ -429,6 +429,7 @@
     <Content Include="Areas\Admin\Views\Patient\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Patient\Delete.cshtml" />
     <Content Include="Areas\Admin\Views\Patient\Detail.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Login.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
