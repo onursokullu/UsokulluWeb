@@ -52,14 +52,14 @@
                             <li class="active"><a href="../Home/Index">Anasayfa</a></li>
                             <li><a href="../Blog/Index">Blog</a></li>
                             <!--<li class="has-children">
-        <a href="category.html">Inspiration</a>
-        <ul class="dropdown">
-            <li><a href="category.html">Architect</a></li>
-            <li><a href="category.html">Minimal</a></li>
-            <li><a href="category.html">Interior</a></li>
-            <li><a href="category.html">Furniture</a></li>
-        </ul>
-    </li>-->
+                                <a href="category.html">Inspiration</a>
+                                <ul class="dropdown">
+                                    <li><a href="category.html">Architect</a></li>
+                                    <li><a href="category.html">Minimal</a></li>
+                                    <li><a href="category.html">Interior</a></li>
+                                    <li><a href="category.html">Furniture</a></li>
+                                </ul>
+                            </li>-->
 
                             <li><a href="../Home/Contact">Hakkında</a></li>
                             <li><a href="../Home/AboutUs">Technology</a></li>
@@ -76,8 +76,34 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-md-4">
-                    <h3 class="footer-heading mb-4">About Us</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat reprehenderit magnam deleniti quasi saepe, consequatur atque sequi delectus dolore veritatis obcaecati quae, repellat eveniet omnis, voluptatem in. Soluta, eligendi, architecto.</p>
+                    <h3 class="footer-heading mb-4">Randevu Al</h3>
+                    @using (Html.BeginForm())
+                    {
+                <div class="form-group">
+                    <label for="exampleInputName" class="bmd-label-floating">İsim Soyisim</label>
+                    <input type="text" class="form-control" name="name" id="exampleInputName" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1" class="bmd-label-floating">E-posta</label>
+                    <input type="email" class="form-control" name="email" id="exampleInputEmail1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1" class="bmd-label-floating">Telefon</label>
+                    <input type="tel" class="form-control" name="tel" id="exampleInputTelephone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputFile" class="bmd-label-floating">Tarih</label>
+                    <input type="date" class="form-control-file" name="date" id="exampleInputFile" required>
+                    <small class="text-muted"></small>
+                </div>
+
+
+
+                <button type="submit" class="btn btn-primary btn-raised">Gönder</button>
+                    }
+
                 </div>
                 <div class="col-md-3 ml-auto">
                     <h3 class="footer-heading mb-4">Quick Menu</h3>
@@ -96,14 +122,15 @@
                 </div>
                 <div class="col-md-4">
                     <div class="mb-5">
-                        <h3 class="footer-heading mb-4">Subscribe</h3>
-                        <form action="" method="post" class="form-footer-subscribe">
+                        <h3 class="footer-heading mb-4">E-Bülten</h3>
+                        <form action="dbconnections/emaillistconn.php" method="post" class="form-footer-subscribe">
                             <div class="form-group d-flex">
-                                <input type="text" class="form-control">
-                                <input type="submit" class="btn btn-primary text-white" value="Subscribe">
+                                <input type="text" class="form-control" name="email">
+                                <input type="submit" class="btn btn-primary text-white" value="Kayıt Ol">
                             </div>
                         </form>
                     </div>
+
                     <div>
                         <h3 class="footer-heading mb-4">Connect With Us</h3>
                         <p>
@@ -127,6 +154,8 @@
                 </div>
             </div>
         </div>
+    </div>
+
     </div>
 
     <!--Script Files-->

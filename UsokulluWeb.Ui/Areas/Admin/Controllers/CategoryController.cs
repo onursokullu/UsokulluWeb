@@ -6,15 +6,18 @@ using System.Net.Http;
 using System.Web.Mvc;
 using UsokulluWeb.Bll;
 using UsokulluWeb.Model;
+using UsokulluWeb.Ui.Filters;
 
 namespace UsokulluWeb.Ui.Areas.Admin.Controllers
 {
     public class CategoryController : Controller
     {
+        [AdminLoginFilter]
         public ActionResult Index()
         {
             return View();
         }
+        [AdminLoginFilter]
         public ActionResult Create()
         {
             return View();

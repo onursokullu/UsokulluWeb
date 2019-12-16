@@ -5,15 +5,18 @@ using System.Net;
 using System.Web.Mvc;
 using UsokulluWeb.Bll;
 using UsokulluWeb.Model;
+using UsokulluWeb.Ui.Filters;
 
 namespace UsokulluWeb.Ui.Areas.Admin.Controllers
 {
     public class SubscriberController : Controller
     {
+        [AdminLoginFilter]
         public ActionResult Subscriber()
         {
             return View();
         }
+        [AdminLoginFilter]
         public ActionResult Create()
         {
 

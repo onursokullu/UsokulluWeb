@@ -31,5 +31,12 @@ namespace UsokulluWeb.Ui.Areas.Admin.Controllers
             }
             return View();
         }
+
+        public ActionResult Logout()
+        {
+            Session.Abandon();
+            Session.Clear();
+            return RedirectToAction("Login", "User");
+        }
     }
 }

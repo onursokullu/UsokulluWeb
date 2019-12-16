@@ -6,11 +6,13 @@ using System.Net.Http;
 using System.Web.Mvc;
 using UsokulluWeb.Bll;
 using UsokulluWeb.Model;
+using UsokulluWeb.Ui.Filters;
 
 namespace UsokulluWeb.Ui.Areas.Admin.Controllers
 {
     public class PatientController : Controller
     {
+        [AdminLoginFilter]
         public ActionResult Index()
         {
             using (PatientRepository repo = new PatientRepository())
@@ -20,6 +22,7 @@ namespace UsokulluWeb.Ui.Areas.Admin.Controllers
             }
 
         }
+        [AdminLoginFilter]
         public ActionResult Create()
         {
             return View();
@@ -36,6 +39,7 @@ namespace UsokulluWeb.Ui.Areas.Admin.Controllers
                 return View();
             }
         }
+        [AdminLoginFilter]
         public ActionResult Edit(int id)
         {
             using (PatientRepository repo = new PatientRepository())
@@ -55,6 +59,7 @@ namespace UsokulluWeb.Ui.Areas.Admin.Controllers
                 return RedirectToAction(nameof(Index));
             }
         }
+        [AdminLoginFilter]
         public ActionResult Delete(int id)
         {
             using (PatientRepository repo= new PatientRepository())
@@ -64,6 +69,7 @@ namespace UsokulluWeb.Ui.Areas.Admin.Controllers
                 return RedirectToAction(nameof(Index));
             }
         }
+        [AdminLoginFilter]
         public ActionResult Detail(int id)
         {
             using (PatientRepository repo = new PatientRepository())
